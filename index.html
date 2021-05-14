@@ -11,6 +11,40 @@
     div ul li a { color: #333; text-decoration: none; }
     div ul li a:hover { color: #F00; text-decoration: underline; }
   
+
+        
+    .base(
+        border: 2px solid red;
+        with: 600px;
+        height: 600px;
+    }
+    
+    .item > ul{
+        border: 1px solid black;
+        position: absolute;
+        display: none;
+    }
+    
+    .item:hover > ul{
+        display: block;
+    }
+    
+    .item{
+        text-align: center;
+        border: 1px solid:blue;
+        float: left;
+        width: 100px;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    ul > li {
+        text-align: center;
+    }       
+        
+        
    
     
     body {
@@ -56,36 +90,7 @@
 }
         
         
-    .base(
-        border: 2px solid red;
-        with: 600px;
-        height: 600px;
-    }
-    
-    .item > ul{
-        border: 1px solid black;
-        position: absolute;
-        display: none;
-    }
-    
-    .item:hover > ul{
-        display: block;
-    }
-    
-    .item{
-        text-align: center;
-        border: 1px solid:blue;
-        float: left;
-        width: 100px;
-    }
-    
-    ul{
-        list-style: none;
-    }
-    
-    ul > li {
-        text-align: center;
-    }        
+        
 </style>
 </head>    
     
