@@ -57,8 +57,28 @@
   <hr>
   <menuitem label="Separated action">
 </menu>
-    
-    
+        <br><br><br>
+      <br><br><br>  
+    <!-- A context menu for a simple editor, containing two menu buttons. -->
+<menu>
+  <li>
+    <button type="menu" value="File" menu="file-menu">
+    <menu type="context" id="file-menu">
+      <menuitem label="New..." onclick="newFile()">
+      <menuitem label="Save..." onclick="saveFile()">
+    </menu>
+  </li>
+  <li>
+    <button type="menu" value="Edit" menu="edit-menu">
+    <menu type="context" id="edit-menu">
+      <menuitem label="Cut..." onclick="cutEdit()">
+      <menuitem label="Copy..." onclick="copyEdit()">
+      <menuitem label="Paste..." onclick="pasteEdit()">
+    </menu>
+  </li>
+</menu>
+    <br><br><br>
+      <br><br><br>  
 
     <div class="base">
         <ul>
