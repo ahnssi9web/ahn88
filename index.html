@@ -6,6 +6,85 @@
     
 
     <style>
+        
+        
+#nav {
+        list-style:none;
+        height:40px;
+        padding:5px 1px;
+        margin:0;
+        background:#f29c74;
+    }
+
+    #nav li{
+       <!-- float:left;           가로배치 ----->
+       <!-- position:relative;    가로배치 ----->
+        margin:5px 30px;
+        padding:0;
+    }
+    
+            #nav li a{
+       <!-- 가로배치 float:left;         
+        <!-- 가로배치 position:relative;   
+        display:block;
+        font-family:"굴림";
+        font-weight:bold;
+        font-size:18px;
+        padding:7px 8px;
+        margin:0;
+        color:#fff;
+        text-decoration:none;
+        text-shadow:0 1px 1px rgba(0,0,0,0.3);
+   }
+
+    #nav li:hover > a{
+        background:#ffcab2;
+        padding:5px;
+        margin:0;
+        color:black;
+    }
+
+    #nav ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+        position:absolute;
+        left:0;
+        top:40px;
+        width:105px;
+        background:#ffcab2;        
+        text-align:center;
+        opacity:0;
+   }
+     
+ #nav ul li{
+        float:none;
+        padding:0;
+        margin:0;
+        font-size:10px;
+    }
+    
+
+    #nav ul a{
+        <!-- 가로배치 float:left;         
+        <!-- 가로배치 position:relative;   
+        font-weight:bold;
+        color:black;
+   }          
+       
+     #nav ul:hover > a{
+        background:#cc9882;
+        font-weight:bold;
+    }    
+   #nav li:hover ul{
+       opacity:1;   
+   }
+       
+ 
+   #nav li:hover ul li{
+       height:95px;
+       overflow:visible;
+       padding:0;        
    }
 
        
