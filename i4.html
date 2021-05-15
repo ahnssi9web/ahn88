@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메뉴 연습</title>
+    
+
+    <style>
+        
+        
+#nav {
+        list-style:none;
+        height:140px;
+        padding:5px 1px;
+        margin:100;
+        background:#f29c74;
+    }
+
+    #nav li{
+       <!-- float:left;           가로배치 ----->
+       <!-- position:relative;    가로배치 ----->
+        margin:5px 30px;
+        padding:0;
+    }
+    
+            #nav li a{
+       <!-- 가로배치 float:left;         
+        <!-- 가로배치 position:relative;   
+        display:block;
+        font-family:"굴림";
+        font-weight:bold;
+        font-size:18px;
+        padding:7px 8px;
+        margin:100;
+        color:#fff;
+        text-decoration:none;
+        text-shadow:0 1px 1px rgba(0,0,0,0.3);
+   }
+
+    #nav li:hover > a{
+        background:#ffcab2;
+        padding:5px;
+        margin:100;
+        color:black;
+    }
+
+    #nav ul{
+        list-style:none;
+        padding:0;
+        margin:100;
+        position:absolute;
+        left:0;
+        top:140px;
+        width:225px;
+        background:#ffcab2;        
+        text-align:center;
+        opacity:0;
+   }
+     
+ #nav ul li{
+        float:none;
+        padding:0;
+        margin:130;
+        font-size:10px;
+    }
+    
+
+    #nav ul a{
+        <!-- 가로배치 float:left;         
+        <!-- 가로배치 position:relative;   
+        font-weight:bold;
+        color:black;
+   }          
+       
+     #nav ul:hover > a{
+        background:#cc9882;
+        font-weight:bold;
+    }    
+   #nav li:hover ul{
+       opacity:1;   
+   }
+       
+ 
+   #nav li:hover ul li{
+       height:35px;
+       overflow:visible;
+       padding:0;        
+   }
+
+       
+        
+</style>
+    
+</head>    
+    
+    
+<body>
+      <ul id="nav">
+            <li><a href="index1.html" target="_blank">메인 메뉴 1</a>
+                 <ul>
+                    <li><a href="#">1-1</a></li>
+                    <li><a href="1.html" target="_blank">1-2</a></li>
+                </ul>
+            </li>   
+            <li><a href="2.html" target="_blank">메인 메뉴 2</a></li>
+                 <ul>
+                    <li><a href="#">2-1</a></li>
+                    <li><a href="#">2-2</a></li>
+                    <li><a href="#">2-3</a></li>
+                    <li><a href="3.html" target="_blank">2-4</a></li>
+                </ul>
+             <li><a href="#">메인 메뉴 3</a></li>
+                 <ul>
+                    <li><a href="#">3-1</a></li>
+                    <li><a href="#">3-2</a></li>
+                    <li><a href="#">3-3</a></li>
+                    <li><a href="3.html" target="_blank">3-4</a></li>
+                </ul>
+             <li><a href="#">메인 메뉴 4</a>
+                 <ul>
+                    <li><a href="#">4-1</a></li>
+                    <li><a href="#">4-2</a></li>
+                    <li><a href="#">4-3</a></li>
+                    <li><a href="3.html" target="_blank">4-4</a></li>
+                </ul>
+            </li>   
+     </ul>        
+</body>
+</html>
