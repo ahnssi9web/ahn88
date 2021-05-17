@@ -1,4 +1,170 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    img{
+      width:300px;
+      float:left;
+      margin:20px;
+    }
+    p{
+      border:1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <img src="sample.mt.jpg" alt="">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minus, obcaecati quia eaque perspiciatis! Vero cum libero architecto. Odit, et. Totam expedita
+  </p>
+  <p style="clear:both;">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minus, obcaecati quia eaque perspiciatis! Vero cum libero architecto. Odit, et. Totam expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minus, obcaecati quia eaque perspiciatis! Vero cum libero architecto. Odit, et. Totam expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minus, obcaecati quia eaque perspiciatis! Vero cum libero architecto. Odit, et. Totam expedita
+  </p>
+</body>
+</html>
 
+
+float를 활용한 holy grail layout
+새창으로 열기
+예제 - float_2_holy_grail_layout.html
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+<!doctype html>
+<html>
+<head>
+  <style>
+    *{
+      box-sizing:border-box;
+    }
+    .container{
+      width:540px;
+      border:1px solid gray;
+      margin:auto;
+    }
+    header{
+      border-bottom: 1px solid gray;
+    }
+    nav{
+      float:left;
+      width:120px;
+      border-right:1px solid gray;
+    }
+    article{
+      float:left;
+      width:300px;
+      border-left:1px solid gray;
+      border-right:1px solid gray;
+      margin-left:-1px;
+    }
+    aside{
+      float:left;
+      width:120px;
+      border-left:1px solid gray;
+      margin-left:-1px;
+    }
+    footer{
+      clear:both;
+      border-top:1px solid gray;
+      text-align: center;
+      padding:20px;
+    }
+  </style>
+</head>
+      
+      
+<body>
+ <div class="container">
+    <header>
+    <h1>
+      CSS
+    </h1>
+    </header>
+    <nav>
+      <ul>
+        <li>position</li>
+        <li>float</li>
+        <li>flex</li>
+      </ul>  
+    </nav>
+    <article>
+      <h2>float</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quae earum enim ab distinctio corrupti eius reprehenderit non, rerum ut nisi autem cum sint perferendis eum id velit, molestias nesciunt. Ullam dignissimos consequuntur explicabo id voluptas vel deleniti nesciunt veritatis iusto commodi, laudantium cumque vero deserunt laboriosam. Ea, quia est?
+    </article>
+    <aside>
+      ad  
+    </aside>
+    <footer>
+      copyleft  
+    </footer>
+ </div>
+      
       <ul id="nav">
             <li><a href="lifeold/0.html" target="_blank">삶-지난 날</a>
                 <submenu>
