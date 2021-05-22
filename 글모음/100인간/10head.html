@@ -3,32 +3,20 @@
      <title> 10head - 어떻게 살 것인가? </title>
   </head>
 
-<body bgcolor="#FFFFFF">
-<script language="JavaScript">
-<!--
-function random_text()
-{};
-var random_text = new random_text();
-// Set the number of text strings to zero to start
-var number = 0;
-// Incremental list of all possible Text
-random_text[number++] = "Random Text1"
-random_text[number++] = "Random Text2"
-random_text[number++] = "Random Text3"
-random_text[number++] = "Random Text4"
-random_text[number++] = "Random Text5"
-random_text[number++] = "Random Text6"
-random_text[number++] = "Random Text7"
-random_text[number++] = "Random Text8"
-random_text[number++] = "Random Text9"
-random_text[number++] = "Random Text10"  
-// Create a random number with limits based on the number
-// of possible random text strings
-var random_number = Math.floor(Math.random() * number);
-// Write out the random text to the browser
-document.write(random_text[random_number]);
---></script>
-
-</body>
+  <body>
+    <script type="text/javascript">
+        var hackerc=new Array()
+        hackerc[0]="모든 일에 감사하는 마음을 갖자.";
+        hackerc[1]="마음과 다른 인사치례는 하지 말자.";
+        hackerc[3]="청하지 않으면 충고하지 말자.";
+        hackerc[4]="칭찬하는 말도 조심해서 하자.";
+        hackerc[5]="남의 생활에 참견 말자.";
+        hackerc[6]="할 수 없는 일은 시작도 하지 말자.";
+        hackerc[7]="의사를 정확히 말하고, 겉과 속이 다른 표현을 하지 말자.";
+        hackerc[8]="어떤 상황에도 남을 헐뜯지 말자.";
+        hackerc[9]="잠깐 만나 하는 말, 귀에 담아 두지 말자.";
+        var whichquote=Math.floor(Math.random()*(hackerc.length))
+        document.write(hackerc[whichquote])
+     </script>
+  </body>
 </html>
-
