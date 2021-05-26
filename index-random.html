@@ -8,17 +8,16 @@
 included):</p>
 <br><br>
 <p id="demo1"></p>
-
 <script>
 document.getElementById("demo1").innerHTML =
 Math.floor(Math.random() * 10);
 </script>
 
 <br><br>
+  
 <p id="demo2">Good Evening!</p>
-
 <script>
-if (new Date().getHours() < 24) {
+if (new Date().getHours() > 24) {
   document.getElementById("demo2").innerHTML = "Good day!";
 }
 </script>
