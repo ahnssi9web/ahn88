@@ -14,8 +14,7 @@ document.getElementById("demo1").innerHTML = d.getTime();
 </script>
 <br><br>
   
-  <p>The getFullYear() method returns the full year of a date:</p>
-
+<p>The getFullYear() method returns the full year of a date:</p>
 <p id="demo2"></p>
 <script>
 var d = new Date();
@@ -23,7 +22,8 @@ document.getElementById("demo2").innerHTML = d.getFullYear();
 </script>
 
 <br><br>
-  
+
+<p>The getDay() method returns the getMonth:</p> 
 <p id="demo3"></p>
 <script>
 var d = new Date();
@@ -31,7 +31,8 @@ document.getElementById("demo3").innerHTML = d.getMonth() + 1;
 </script>
 
 <br><br>
-  
+
+<p>The getDay() method returns the getDate:</p> 
   <p id="demo"></p>
 <script>
 var d = new Date();
@@ -39,26 +40,24 @@ document.getElementById("demo").innerHTML = d.getDate();
 </script>
  
 <br><br>
-  
-<p id="demo"></p>
-<script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d.getMinutes();
-</script>
-  
-<br><br>
- 
-<br><br>
- 
-<br><br>
- 
+<p>The getDay() method returns the getHours:</p> 
 <p id="demo"></p>
 <script>
 var d = new Date();
 document.getElementById("demo").innerHTML = d.getHours();
 </script>  
+
+  <p>The getDay() method returns the getMinutes:</p>   
+<p id="demo"></p>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getMinutes();
+</script>
+
  
 <br><br>
+<br><br>
+<p>The getDay() method returns the getSeconds:</p> 
 <p id="demo"></p>
 <script>
 var d = new Date();
@@ -66,23 +65,16 @@ document.getElementById("demo").innerHTML = d.getSeconds();
 </script>
  
 <br><br>
-  
+<p>The getDay() method returns the weekday as a number:</p> 
 <p id="demo"></p>
 <script>
 var d = new Date();
 document.getElementById("demo").innerHTML = d.getDay();
 </script>
 
- 
 <br><br>
-<p id="demo"></p>
-<script>
-var d = new Date();
-var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-document.getElementById("demo").innerHTML = days[d.getDay()];
-</script>
-
-<br><br>
+<p>The getDay() method returns the weekday as a number:</p>
+<p>You can use an array to display the name of the weekday:</p>
 <p id="demo"></p>
 <script>
 var d = new Date();
