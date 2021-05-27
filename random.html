@@ -1,62 +1,41 @@
-<!DOCTYPE html>
 <html>
-<body>
-
-  <script type="text/javascript">
-
-var a = Math.floor(Math.random() * 10) + 1;
-document.write('(1) ' + a + '<br>');
-
+  <head>
+     <title> 어떻게 살 것인가? </title>
+    <style>
+      p{
+        font-size: 30px;
+        font-family: "Times New Roman", Times, cursive;
+        font-weight: bold;
+        color: blue; 
+        text-align: center;
+        text-decoration: line-through; 
+        border:1px solid red;      
+      }
+    </style>
     
-  int gNum = (int)Math.floor(Math.random() * 1000000) + 1;
-document.write('(1) ' + gNum + '<br>');
+  </head>
 
-</script>
-
-
-ㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅ
-
+  <body>
   
-// (1) 0 <= random < 1
-const rand1 = Math.random();
-document.write('(1) ' + rand1 + '<br>');
+   <p>
+    <script type="text/javascript">
+        var hackerc=new Array()
+        hackerc[0]="그만웃겨.jpg";
+        hackerc[1]="그만웃겨.jpg";        
+      hackerc[2]="그만웃겨.jpg";
+        hackerc[3]="그만웃겨.jpg";
+        hackerc[4]="그만웃겨.jpg";        
+      hackerc[5]="그만웃겨.jpg";
+        hackerc[6]="그만웃겨.jpg";
+        hackerc[7]="그만웃겨.jpg";        
+      hackerc[8]="그만웃겨.jpg";
+         hackerc[9]="그만웃겨.jpg";
+        var whichquote=Math.floor(Math.random()*(hackerc.length))
 
-// (2) 0
-const rand2 = Math.floor(Math.random());
-document.write('(2) : ' + rand2 + '<br>');
+           location="https://ahnssi9web.github.io/web1/"+"hackerc[whichquote]";
 
-// (3) 0 <= random <= 9
-const rand_0_9 = Math.floor(Math.random() * 10);
-document.write('(3) : ' + rand_0_9 + '<br>');
-
-// (4) 0 <= random <= 10
-const rand_0_10 = Math.floor(Math.random() * 11);
-document.write('(4) : ' + rand_0_10 + '<br>');
-
-// (5) 0 <= random <= 99
-const rand_0_99 = Math.floor(Math.random() * 100);
-document.write('(5) : ' + rand_0_99 + '<br>');
-
-// (6) 0 <= random <= 100
-const rand_0_100 = Math.floor(Math.random() * 101);
-document.write('(6) : ' + rand_0_100 + '<br>');
-
-// (7) 1 <= random <= 10
-const rand_1_10 = Math.floor(Math.random() * 10) + 1;
-document.write('(7) : ' + rand_1_10 + '<br>');
-
-// (8) 2 <= random <= 5
-const rand_2_5 = Math.floor(Math.random() * 4) + 2;
-document.write('(8) : ' + rand_2_5 + '<br>');
-
-  
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var x = Math.floor((Math.random() * 10) + 1);
-  document.getElementById("demo").innerHTML = x;
-}
-</script>
-</body>
+     </script>
+    </p>
+    
+  </body>
 </html>
