@@ -3,18 +3,6 @@
   
 <HEAD><TITLE>(제목 없음)</TITLE>
 
-<script language="javascript">
-<!--
-function login_page(form) {
-    if (form.pass.value=="1234") {
-        location="https://ahnssi9web.github.io/web1/index-random.html"
-        } else {
-        alert("패스워드가 틀립니다.")
-          location="https://ahnssi9web.github.io/web1/index.html"
-        }
-    }
-</script>
-
 </HEAD>  
   
 <body>
@@ -31,16 +19,8 @@ document.getElementById("demo1").innerHTML = d.getTime();
 </script>
 <br><br>
  
- <p align="left">
-site.htm으로 들어가시려면 비밀번호를 입력하시고 확인을 눌러주세요.</p>
-<form name="loginForm">
-<p style="margin-bottom:20;"> 비밀번호입력
-<input name="pass" type="password" size="12">
-<input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
-</form>
-<p align="left"></p> 
-  
-  
+
+ 
 <p>The getFullYear() method returns the full year of a date:</p>
 <p id="demo2"></p>
 <script>
@@ -48,7 +28,18 @@ var d = new Date();
 document.getElementById("demo2").innerHTML = d.getFullYear();
 </script>
 
-
+<br><br>
+<script language="javascript">
+<h2>패스워드</h2>
+function login_page(form) {
+    if (form.pass.value=="1234") {
+        location="https://ahnssi9web.github.io/web1/index-random.html"
+        } else {
+        alert("패스워드가 틀립니다.")
+          location="https://ahnssi9web.github.io/web1/index.html"
+        }
+    }
+</script>
   
 <br><br>
 <p>The getDay() method returns the getMonth:</p> 
