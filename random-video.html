@@ -1,24 +1,24 @@
-<html> 
-  <head> 
-    <title>Test</title> 
-    
-    <script type="text/javascript">
-      var imageURLs = [ "닭알알알.mp4" , 
-                       "머리 탁구.mp4",
-                       "이게 웬 떡이야.mp4" ]; 
-      
-      function getImageTag() { var img = '<video src=\"'; 
-                              var randomIndex = Math.floor(Math.random() * imageURLs.length); 
-                              img += imageURLs[randomIndex]; 
-                              img += '\" alt=\"Some alt text\"/>'; 
-                              return img; } 
-  
-  </script> 
-  </head> 
-  
-  <body>
-    <script type="text/javascript"> 
-      document.write(getImageTag()); 
-    </script> 
-  </body> 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var videos = ["닭알알알.mp4" , "머리 탁구.mp4","이게 웬 떡이야.mp4" ]; 
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '640');
+            player.setAttribute('height', '390');
+            player.setAttribute('src', randomVideoUrl);
+
+            playerDiv.appendChild(player);
+        };
+    </script>
+</head>
+
+<body>
+    <div id="random_player" />
+</body>
+
 </html>
