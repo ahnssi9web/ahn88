@@ -1,5 +1,21 @@
 <HTML><HEAD><TITLE>(정용 생각)</TITLE>
 
+  
+      <script>
+        var videos = ["닭알알알.mp4" , "머리 탁구.mp4","이게 웬 떡이야.mp4" ]; 
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '640');
+            player.setAttribute('height', '390');
+            player.setAttribute('src', randomVideoUrl);
+
+            playerDiv.appendChild(player);
+        };
+    </script>
+  
+  <br><br><br><br>
   <script language="javascript">
 function login_page(form) {
   if (form.pass.value=="0824") {
@@ -14,7 +30,12 @@ function login_page(form) {
 </HEAD>
 
 <body>
-<br><br><br><br><br><br><br><br>
+<br><br>
+  
+       <div id="random_player" />
+
+  <br><br>
+  
 <p align="center">
 <form name="loginForm">
     <p style="margin-bottom:200;"> 비밀번호입력
@@ -23,5 +44,6 @@ function login_page(form) {
 </form>
 <p align="center"></p>
   
+ 
 </BODY>
   </HTML>
