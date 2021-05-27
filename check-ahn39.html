@@ -1,0 +1,27 @@
+<HTML><HEAD><TITLE>(정용 생각)</TITLE>
+
+<script language="javascript">
+function login_page(form) {
+  if (form.pass.value=="0824") {
+     location="https://ahnssi9web.github.io/web1/그만웃겨.jpg"
+     } else {
+     alert("패스워드가 틀립니다.")
+     location="https://ahnssi9web.github.io/web1/index.html"
+  }
+}
+</script>
+
+</HEAD>
+
+<body>
+
+<p align="left">
+<form name="loginForm">
+    <p style="margin-bottom:20;"> 비밀번호입력
+    <input name="pass" type="password" size="12">
+    <input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
+</form>
+<p align="left"></p>
+  
+</BODY>
+  </HTML>
