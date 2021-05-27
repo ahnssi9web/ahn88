@@ -53,13 +53,14 @@
       
       
  
-<body onLoad="location.hash = Math.floor((Math.random() * 100) + 1);">
-  
-  
-    <h1>
-        onLoad 
-      <br>
- 
+<body>
+ setInterval(function() {
+  var i = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+  document.getElementById("random").innerHTML = i;
+}, 1000);
+ <span id="random"></span>
+      
+      
 <?php
 $url ='https://linkexample/ws/'+ rand(1,100); + '.com';    
 echo $url;
