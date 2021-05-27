@@ -1,6 +1,20 @@
 <HTML>
   <HEAD>
     <TITLE>(정용 생각)</TITLE>
+    
+    
+  <script language="javascript">
+function login_page(form) {
+  if (form.pass.value=="0824") {
+             location="https://ahnssi9web.github.io/web1/index-ahn39.html"
+     } else {
+             location="https://ahnssi9web.github.io/web1/index.html"
+  }
+}
+</script>
+
+  <br><br>    
+    
   <script type="text/javascript">
       var imageURLs = [ "그만웃겨.jpg" , 
                        "돌부부.png" , 
@@ -28,7 +42,8 @@
                               return img; } 
       
   </script> 
-  
+    <br><br>
+    
       <script>
         var videos = ["닭알알알.mp4" , "머리 탁구.mp4","이게 웬 떡이야.mp4","어린이 암벽 등산.mp4"]; 
         window.onload = function () {
@@ -43,30 +58,12 @@
         };
     </script>
   
-  <br><br>
-    
-  <script language="javascript">
-function login_page(form) {
-  if (form.pass.value=="0824") {
-             location="https://ahnssi9web.github.io/web1/index-ahn39.html"
-     } else {
-             location="https://ahnssi9web.github.io/web1/index.html"
-  }
-}
-</script>
+
 
 </HEAD>
 
   
 <body>
-  
-    <script type="text/javascript"> 
-      document.write(getImageTag()); 
-    </script> 
-    <br><br>
-  
-    <div id="random_player" />
-    <br><br>
   
 <p align="center">
 <form name="loginForm">
@@ -75,7 +72,17 @@ function login_page(form) {
     <input type="button" value="****" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
 </form>
 <p align="center"></p>
+    <br><br>
   
+    
+    <script type="text/javascript"> 
+      document.write(getImageTag()); 
+    </script> 
+    <br><br>
+  
+    <div id="random_player" />
+
+
 </BODY>
   
 </HTML>
