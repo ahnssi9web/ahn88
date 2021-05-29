@@ -1,0 +1,31 @@
+<html>
+  <head></head>
+  
+  <body>
+
+<script language="JavaScript">
+<!--
+song = new Array(3);
+song[0] = '권혜경 - 산장의여인.mp3'
+song[1] = '김민기 - 아침이슬.mp3'
+song[2] = 'mp3/Let It Be.mp3'
+ 
+stitle = new Array(3);
+stitle[0] = '산장의여인'
+stitle[1] = '아침이슬'
+stitle[2] = 'mp3/Let It Be'
+
+index = Math.floor(Math.random() * song.length);
+document.write("<embed name=bgm src="+song[index]+" autostart=true hidden=true
+
+loop=true>");
+document.write(stitle[index]);
+
+
+onkeydown = function () {
+ if(event.keyCode == 27) { bgm.stop() } //Esc 를 눌렀을 경우 배경음악 멈춤...}
+//-->
+</script>
+
+  </body>
+</html>
