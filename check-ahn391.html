@@ -101,7 +101,7 @@ hackerc[82]=" 감귤 먹을 때 알맹이마다 붙어있는 흰실, 이거이�
 hackerc[83]=" 특별히 잘난 구석도 없으면서 틈만 나면 남을 깎아내리는 사람들이 있습니다. 그토록 부럽거나 그토록 눈꼴사나우면 열심히 노력해서 능력을 한번 보여 달라고 충언해 주고 싶습니다. 하지만 그런 사람들은 대개 노력보다는 허세가 밑천의 전부일 때가 많습니다. -이외수-    ";
   
          
-         var whichquote=Math.floor(Math.random()*(hackerc.length))
+        var whichquote=Math.floor(Math.random()*(hackerc.length))
         document.write(hackerc[whichquote])
      </script>
  <br><br>
@@ -239,10 +239,9 @@ hackerc[83]=" 특별히 잘난 구석도 없으면서 틈만 나면 남을 깎�
             var playerDiv = document.getElementById("random_player");
             var player = document.createElement("IFRAME");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '640');
-            player.setAttribute('height', '390');
+            player.setAttribute('width', '600');
+            player.setAttribute('height','300');
             player.setAttribute('src', randomVideoUrl);
-
             playerDiv.appendChild(player);
         };
     </script>
