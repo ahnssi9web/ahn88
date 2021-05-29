@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=euc-kr">
-<title>¼­ÃÊ3µ¿ »ùµ¶¼­½Ç </title>
+<title>ì„œì´ˆ3ë™ ìƒ˜ë…ì„œì‹¤ </title>
 </head>
 
 <body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0">
@@ -10,14 +10,13 @@
     <tr>
         <td width="504">
 		<br></br>
-  		<p align="center"><font color="red"><b><u><span style="font-size:22pt;">CPA ½ÃÇè ÁØºñÀÚ È¯¿µ</span></u></b></font></p>
-  		<p align="center"><font color="red"><b><u><span style="font-size:20pt;">½ÇÀåºÎºÎ Á÷Á¢ °ü¸® Á¶¿ëÇÏ°í ±ú²ýÇÔ</span></u></b></font></p>
-   		<p align="center"><font color="blue"><b><u><span style="font-size:18pt;">¿©·¯¸íÀÌ ½ÃÇè ÁØºñÁßÀÌ°í</span></u></b></font></p>
-    		<p align="center"><font color="blue"><b><u><span style="font-size:16pt;">´Ù¸¥ °÷¿¡¼­ ¿Å°Ü ¿Â ÇÐ»ýµµ ´Ù¼ö ÀÖÀ½</span></u></b></font></p>    		
-   		<p align="center"><font color="fruncia"><b><u><span style="font-size:14pt;">ÃÖÀûÀÇ È¯°æÀ» ¸¸µé¾î µå¸®°Ú½À´Ï´Ù.</span></u></b></font></p>
+  		<p align="center"><font color="red"><b><u><span style="font-size:22pt;">CPA ì‹œí—˜ ì¤€ë¹„ìž í™˜ì˜</span></u></b></font></p>
+  		<p align="center"><font color="red"><b><u><span style="font-size:20pt;">ì‹¤ìž¥ë¶€ë¶€ ì§ì ‘ ê´€ë¦¬ ì¡°ìš©í•˜ê³  ê¹¨ë—í•¨</span></u></b></font></p>
+   		<p align="center"><font color="blue"><b><u><span style="font-size:18pt;">ì—¬ëŸ¬ëª…ì´ ì‹œí—˜ ì¤€ë¹„ì¤‘ì´ê³ </span></u></b></font></p>
+    		<p align="center"><font color="blue"><b><u><span style="font-size:16pt;">ë‹¤ë¥¸ ê³³ì—ì„œ ì˜®ê²¨ ì˜¨ í•™ìƒë„ ë‹¤ìˆ˜ ìžˆìŒ</span></u></b></font></p>    		
+   		<p align="center"><font color="fruncia"><b><u><span style="font-size:14pt;">ìµœì ì˜ í™˜ê²½ì„ ë§Œë“¤ì–´ ë“œë¦¬ê² ìŠµë‹ˆë‹¤.</span></u></b></font></p>
+	</td>
     </tr>
-
-
 </table>
 </body>
 
