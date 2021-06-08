@@ -1,7 +1,7 @@
 <?php session_start() ?>
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
 <?php
- $pass = "gogo";
+ $pass = "ahn39";
  if( filter_has_var(INPUT_POST, "inputpass") || $_SESSION['pass'] )
  {
   $inputpass = filter_input(INPUT_POST, "inputpass");
