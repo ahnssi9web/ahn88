@@ -7,9 +7,7 @@
 </head>
 <body>
 	
-    	<div id="random_player" />
-    	<br>
-	
+
 	<SCRIPT language="JavaScript">
 		s=13;
 		for (i=1; i<=10; i++)
@@ -17,7 +15,6 @@
 			s=s+i;
 
 
-      <script>
         
         var videos = ["900동영상모음/욕심쟁이 노래.mp4",
          "900동영상모음/부부.mp4",
@@ -120,7 +117,8 @@
          "900동영상모음/암벽0.mp4",
                       
          "900동영상모음/웃고 윙크하는 강아지.mp4",                      
-         "900동영상모음/트럼프를 한 대 때린 남자.mp4"];      
+         "900동영상모음/트럼프를 한 대 때린 남자.mp4"];  
+			
         window.onload = function () {
             var playerDiv = document.getElementById("random_player");
             var player = document.createElement("IFRAME");
@@ -130,7 +128,6 @@
             player.setAttribute('src', randomVideoUrl);
             playerDiv.appendChild(player);
         };
-    </script>
   
 
 
