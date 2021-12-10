@@ -27,11 +27,14 @@ for(k=0;k<16;k++)
   		document.write(" img name -- ---> ",img);   
              sleep(1000);
 
-              int x, y;
-              for(y=0;y<25;y++) {
-                     for(x=0;x<80;x++) System.out.print(\" \");
-                     System.out.println(\"\");
-              }       
+       
+              final String os = System.getProperty("os.name"); 
+              if(os.contains("Windows"))
+	              new ProcessBuilder("cmd", "/c", "cls").inherit10().start().waitfor() 
+              else
+	              Runtime.getRuntime().exec("clear");
+
+
 }
 </script> 
 <br>
