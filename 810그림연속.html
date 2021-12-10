@@ -18,14 +18,14 @@ for(k=0;k<6;k++)
                       		 "800그림모음/100죽녹원 사진 전체.png",
                         	 "800그림모음/환한한한 웃음.jpg",
                       		 "800그림모음/활짝웃으니.jpg"];   
- 		document.write("-- ---> ",k);   
       		function getImageTag() { var img = '<img src=\"'; 
                               var randomIndex = Math.floor(Math.random() * imageURLs.length); 
                               img += imageURLs[randomIndex]; 
                               img += '\" alt=\" --->> Something wrong -----> check.... \"/>'; 
                               return img; } 
       		document.write(getImageTag()); 
-              sleep(1000);
+  		document.write(" img name -- ---> ",img);   
+             sleep(1000);
 }
  </script> 
 <br>
