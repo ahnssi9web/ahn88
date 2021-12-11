@@ -1,41 +1,12 @@
 <html>
  <head>
   <title> New Document </title>
-    <script language="javascript" type="text/javascript">
-        //for문
-        /*
-        for (초기식 ; 조건식; 증감식)
-        {
+
+ </head>
  
-        }
-        */
-
-
-
-        for (var i=1; i<=5;i++ )
-        {
-            document.write("안녕---- <br/>");
-        }
-        document.write("<hr/>");
-        for (var j=1; j<=10;j++ )
-        {
-            document.write(j+" ====  " );
-        }
-        document.write("<hr/>");
-
-        var sum = 0 ; //합계
-        for (var k=1;k<=100 ;k++ )
-        {
-            sum += k; //누적 1+2+....+ 100
-        }
-        document.write("1부터 100까지 합: "+sum+"입니다<br/>");
-        document.write("<hr/>");
-
-        for (var j=1; j<=10;j++ )
-        {
-    
-
-        
+ <body>
+        for (var j=1; j<=10; j++ )
+        {        
         var videos = ["900동영상모음/욕심쟁이 노래.mp4",
          "900동영상모음/부부.mp4",
          "900동영상모음/100죽녹원 영상11.mp4",
@@ -148,16 +119,12 @@
             playerDiv.appendChild(player);
         };
        document.write("<hr/>");
-	document.write(j+" "+videos[j]+" == 동영상 연속 재생하기 성공인가??? ==  " );
-       document.write("<hr/>");
-	}
+       document.write(j+" "+videos[j]+" == 동영상 연속 재생하기 성공인가??? ==  " );
 
-    </script>
- </head>
- 
- <body>
+       document.write("<hr/>");
  	<p id="random_player">---ahn39 test 3분 대기후 다시---</p>
 	sleep(200000); //200초 3분
  	<p id="random_player">---ahn39 test- 성공 --</p>
+  }
  </body>
 </html>
