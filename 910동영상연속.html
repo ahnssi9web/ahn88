@@ -110,7 +110,28 @@
 
 		 "900동영상모음/웃고 윙크하는 강아지.mp4",                      
 		 "900동영상모음/트럼프를 한 대 때린 남자.mp4"];    
-	      <video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
+
+	        <video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
+	        document.write("<hr/>");
+       	        document.write(j+" "+videos[j]+" == ahn test start ==  " );
+	        document.write("<hr/>");
+
+		window.onload = function () {
+		    var playerDiv = document.getElementById("random_player");
+		    var player = document.createElement("IFRAME");
+		    var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+		    player.setAttribute('width', '600');
+		    player.setAttribute('height','300');
+		    player.setAttribute('src', randomVideoUrl);
+		    playerDiv.appendChild(player);
+		};
+	        document.write("random_player");
+	        document.write(random_player);
+
+	        <video controls witdh="500px" height="500px" src="random_player"></video><br><br>  
+	        document.write("<hr/>");
+       	        document.write(j+" "+videos[j]+" == ahn test close ==  " );
+	        document.write("<hr/>");
 
 	  }
      </script>
