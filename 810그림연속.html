@@ -42,9 +42,7 @@
                               img += imageURLs[randomIndex]; 
                               img += '\" alt=\" --->> Something wrong -----> check.... \"/>'; 
                               return img; } 
-      		document.write(getImageTag()); 
-        document.write(j+" == 그림 연속 재생하기 성공인가??? == 3분대기 후 다른 것 재생  " );
-        //sleep(200000); //200초 3분 대기 
+
         }
 
 
@@ -52,6 +50,10 @@
  </head>
  
  <body>
- 
+        for (var jjj=1; jjj<=10;jjj++ )
+        {       	document.write(getImageTag()); 
+        document.write(jjj+" == 그림 연속 재생하기 성공인가??? == 3분대기 후 다른 것 재생  " );
+        sleep(2000); //200초 3분 대기 
+        }
  </body>
 </html>
