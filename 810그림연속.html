@@ -1,7 +1,11 @@
 <html>
  <head>
   <title> New Document </title>
-    <script language="javascript" type="text/javascript">
+
+ </head>
+ 
+ <body>
+     <script language="javascript" type="text/javascript">
         //for문
         /*
         for (초기식 ; 조건식; 증감식)
@@ -29,6 +33,7 @@
             sum += k; //누적 1+2+....+ 100
         }
         document.write("1부터 100까지 합: "+sum+"입니다<br/>");
+      
         document.write("<hr/>");
         for (var j=1; j<=10;j++ )
         {
@@ -36,19 +41,15 @@
                       		 "800그림모음/100죽녹원 사진 전체.png",
                         	 "800그림모음/환한한한 웃음.jpg",
                       		 "800그림모음/활짝웃으니.jpg"];   
- 		document.write("--그림 연속 재생 ---> ",j);   
-      		function getImageTag() { var img = '<img src=\"'; 
+ 		             document.write("--그림 연속 재생 ---> ",j);   
+      		        function getImageTag() { var img = '<img src=\"'; 
                               var randomIndex = Math.floor(Math.random() * imageURLs.length); 
                               img += imageURLs[randomIndex]; 
                               img += '\" alt=\" --->> Something wrong -----> check.... \"/>'; 
                               return img; } 
-        }
+
                 document.write(getImageTag()); 
-
-
+        }
     </script>
- </head>
- 
- <body>
- </body>
+</body>
 </html>
