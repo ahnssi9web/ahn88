@@ -10,17 +10,17 @@
         document.write("<hr/>");
         for (var j=1; j<=10;j++ )
         {
-       		var imageURLs = ["800그림모음/거꾸로 보면 답이.jpg",
-                      		 "800그림모음/100죽녹원 사진 전체.png",
-                        	 "800그림모음/환한한한 웃음.jpg",
-                      		 "800그림모음/활짝웃으니.jpg"];   
- 		             document.write("--그림 연속 재생 ---> ",j);   
-      		        function getImageTag() { var img = '<img src=\"'; 
-                              var randomIndex = Math.floor(Math.random() * imageURLs.length); 
-                              img += imageURLs[randomIndex]; 
-                              img += '\" alt=\" --->> Something wrong -----> check.... \"/>'; 
-                              return img; } 
-                document.write(getImageTag()); 
+           var imageURLs = ["800그림모음/거꾸로 보면 답이.jpg",
+                           "800그림모음/100죽녹원 사진 전체.png",
+                            "800그림모음/환한한한 웃음.jpg",
+                           "800그림모음/활짝웃으니.jpg"];   
+           document.write("--그림 연속 재생 ---> ",j);   
+           function getImageTag() { var img = '<img src=\"'; 
+           var randomIndex = Math.floor(Math.random() * imageURLs.length); 
+                                img += imageURLs[randomIndex]; 
+                                img += '\" alt=\" --->> Something wrong -----> check.... \"/>'; 
+                                return img; } 
+           document.write(getImageTag()); 
         }
     </script>
 </body>
