@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+ <head>
+  <title> New Document </title>
+
+ </head>
+ 
+ <body>
+     <script language="javascript" type="text/javascript">
+        document.write("<hr/>");
+        for (var j=1; j<=10;j++ )
+        {
+            var videos = ["900동영상모음/닭알알알.mp4",
+                 "900동영상모음/손가락 맞추기.mp4",
+                 "900동영상모음/각종 신기한 기계들.mp4",
+                 "900동영상모음/강아지의 체온.mp4",
+                 "900동영상모음/동물과의 교감.mp4",
+                 "900동영상모음/만능 여행 가방.mp4",
+                 "900동영상모음/술 취한 동물들.mp4",
+                 "900동영상모음/엉덩이 커피 자판기.mp4",
+                 "900동영상모음/인생은 돌고 돌아요 순환.mp4",
+                 "900동영상모음/시골 노부부들의 자식 편지.mp4",
+                 "900동영상모음/술을 끊잖아 또라이야.mp4",
+                 "900동영상모음/웃고 윙크하는 강아지.mp4",                      
+                 "900동영상모음/트럼프를 한 대 때린 남자.mp4"];   
+
+           document.write("-- 동영상 연속 재생 ---> ",j);   
+
+ 		    
+		 
+     function () {
+		    var playerDiv = document.getElementById("random_player");
+		    var player = document.createElement("IFRAME");
+		    var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+		    player.setAttribute('width', '600');
+		    player.setAttribute('height','300');
+		    player.setAttribute('src', randomVideoUrl);
+		    playerDiv.appendChild(player);
+        document.write("<hr>");
+       	document.write(j+" "+videos[j]+" == ahn test 1 ==  " );
+	      <p id="random_player">---ahn39 success ---</p>
+	      document.write("<hr>");
+       }
+          
+     </script>
+
+	 	    <video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
+
+</body>
+</html>
