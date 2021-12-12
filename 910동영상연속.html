@@ -6,9 +6,7 @@
  
  <body>
      <script language="javascript" type="text/javascript">
-           for (var j=1; j<=10; j++ )
-        {   
-  		    
+    	function ahnvideo(){
 		var videos = ["900동영상모음/욕심쟁이 노래.mp4",
 		 "900동영상모음/부부.mp4",
 		 "900동영상모음/100죽녹원 영상11.mp4",
@@ -110,7 +108,9 @@
 		 "900동영상모음/암벽0.mp4",
 
 		 "900동영상모음/웃고 윙크하는 강아지.mp4",                      
-		 "900동영상모음/트럼프를 한 대 때린 남자.mp4"];    
+		 "900동영상모음/트럼프를 한 대 때린 남자.mp4"]; 
+
+   
 		window.onload = function () {
 		    var playerDiv = document.getElementById("random_player");
 		    var player = document.createElement("IFRAME");
@@ -122,14 +122,17 @@
 		};
 	        document.write("random_player");
 	        document.write("<hr/>");
-       	        document.write(j+" "+videos[j]+" == ahn test 1 ==  " );
+       	        document.write(" ===> "+randomVideoUrl+" == ahn test 1 ==  " );
 	        document.write("<hr/>");
- 	  }
-     </script>
+      </script>
+
+           for (var j=1; j<=10; j++ )
+        {   
+  		ahnvideo();
 	        <p id="random_player">---ahn39 success ---</p>
 	 	<video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
-	        <video controls witdh="100px" height="300px" src="random_player"></video><br><br>  
-
+	        <video controls witdh="100px" height="300px" src=random_player></video><br><br>  
+	  }
 
 </body>
 </html>
