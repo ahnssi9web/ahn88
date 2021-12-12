@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
  <head>
-  <title> New Document </title>
+  <title> ahn39 동영상 연속 재생 </title>
   <meta charset="utf8">
 
+
      <script language="javascript" type="text/javascript">
-    	function ahnvideo(){
+            
 		var videos = ["900동영상모음/욕심쟁이 노래.mp4",
 		 "900동영상모음/부부.mp4",
 		 "900동영상모음/100죽녹원 영상11.mp4",
@@ -109,8 +110,7 @@
 		 "900동영상모음/웃고 윙크하는 강아지.mp4",                      
 		 "900동영상모음/트럼프를 한 대 때린 남자.mp4"]; 
 
-   
-		window.onload = function () {
+		window.onload = function() {
 		    var playerDiv = document.getElementById("random_player");
 		    var player = document.createElement("IFRAME");
 		    var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
@@ -126,15 +126,13 @@
  <body>
            for (var j=1; j<=10; j++ )
         {   
-	        document.write("random_player");
 	        document.write("<hr/>");
        	        document.write(" ===> "+randomVideoUrl+" == ahn test 1 ==  " );
-	        document.write("<hr/>");
-		ahnvideo();
 	        <p id="random_player">---ahn39 success ---</p>
-	 	<video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
-	        <video controls witdh="100px" height="300px" src=random_player></video><br><br>  
-	  }
+	        document.write("<hr/>");
+        }
 
-</body>
+ 
+    </body>
+ 
 </html>
