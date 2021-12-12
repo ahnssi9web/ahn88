@@ -6,7 +6,8 @@
 
 
      <script language="javascript" type="text/javascript">
-            
+             	function ahnvideo()
+		{
 		var videos = ["900동영상모음/욕심쟁이 노래.mp4",
 		 "900동영상모음/부부.mp4",
 		 "900동영상모음/100죽녹원 영상11.mp4",
@@ -119,20 +120,19 @@
 		    player.setAttribute('src', randomVideoUrl);
 		    playerDiv.appendChild(player);
 		};
-
+	   }
       </script>
  </head>
- 
+
  <body>
            for (var j=1; j<=10; j++ )
         {   
+		ahnvideo();
 	        document.write("<hr/>");
        	        document.write(" ===> "+randomVideoUrl+" == ahn test 1 ==  " );
 	        <p id="random_player">---ahn39 success ---</p>
 	        document.write("<hr/>");
         }
-
- 
     </body>
  
 </html>
