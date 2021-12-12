@@ -6,8 +6,7 @@
 
 
      <script language="javascript" type="text/javascript">
-             	function ahnvideo()
-		{
+
 		var videos = ["900동영상모음/욕심쟁이 노래.mp4",
 		 "900동영상모음/부부.mp4",
 		 "900동영상모음/100죽녹원 영상11.mp4",
@@ -120,7 +119,6 @@
 		    player.setAttribute('src', randomVideoUrl);
 		    playerDiv.appendChild(player);
 		};
-	   }
       </script>
  </head>
 
@@ -129,15 +127,17 @@
 	<script language="javascript" type="text/javascript">
            for (var j=1; j<=10; j++ )
         {   
-		ahnvideo();
 	        document.write("<hr>");
-       	        document.write(j+" videos[j]===> "+videos[j]+" == ahn test 1 ==  " );
+    	        <p id="random_player">---random_player ====>  ahn test 1  ---</p>
+	        document.write("<hr>");
+		
+		document.write(j+" videos[j]===> "+videos[j]+" == ahn test 2 ==  " );
       		<video controls witdh="100px" height="300px" src=videos[j]></video><br><br>  
 	        document.write("<hr>");
-       	        document.write("  900동영상모음/닭알알알 ===== ahn test 2 ==  " );
+		
+       	        document.write("  900동영상모음/닭알알알 ===== ahn test 3 ==  " );
       		<video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
-    	        <p id="random_player">---random_player ====>  ahn test 3  ---</p>
-	        document.write("<hr>");
+
         }
 	</script>	     
 	 document.write(" ---9----");
