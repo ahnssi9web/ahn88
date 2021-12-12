@@ -23,12 +23,7 @@
                  "900동영상모음/술을 끊잖아 또라이야.mp4",
                  "900동영상모음/웃고 윙크하는 강아지.mp4",                      
                  "900동영상모음/트럼프를 한 대 때린 남자.mp4"];   
-
-           document.write("-- 동영상 연속 재생 ---> ",j);   
-
- 		    
-		 
-     function () {
+	    window.onload = function () {
 		    var playerDiv = document.getElementById("random_player");
 		    var player = document.createElement("IFRAME");
 		    var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
@@ -36,10 +31,10 @@
 		    player.setAttribute('height','300');
 		    player.setAttribute('src', randomVideoUrl);
 		    playerDiv.appendChild(player);
-        document.write("<hr>");
-       	document.write(j+" "+videos[j]+" == ahn test 1 ==  " );
-	      <p id="random_player">---ahn39 success ---</p>
-	      document.write("<hr>");
+        	document.write("<hr>");
+       		document.write(j+" "+videos[j]+" == ahn test 1 ==  " );
+	      	<p id="random_player">---ahn39 success ---</p>
+	      	document.write("<hr>");
        }
           
      </script>
