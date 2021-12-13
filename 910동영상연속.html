@@ -42,8 +42,26 @@
 		document.write("<hr>");
  
       		document.write("  "+j+"번 동영상 대기 ---> 200초 3분  ");
-		sleep(200000);
        		document.write("  "+j+"번 동영상 대기했나? ---> 200초 3분  ");
+		
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '600');
+            player.setAttribute('height','300');
+            player.setAttribute('src', randomVideoUrl);
+            playerDiv.appendChild(player);
+        }; 
+ 		// 줄바꿈   
+		document.write("");
+
+		document.write("<p ");
+		document.write("id = 'random_player'>");
+		document.write("---ahn1 random_player  ---");
+		document.write("</p>");
+
+		
   }
      </script>
 
