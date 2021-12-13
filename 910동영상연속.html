@@ -17,8 +17,17 @@
                  "900동영상모음/시골 노부부들의 자식 편지.mp4",
                  "900동영상모음/술을 끊잖아 또라이야.mp4",
                  "900동영상모음/웃고 윙크하는 강아지.mp4",                      
-                 "900동영상모음/트럼프를 한 대 때린 남자.mp4"];   
-      	    document.write("== ahn test "+j+"  ==>  "+videos[j]+"<br>");
+                 "900동영상모음/트럼프를 한 대 때린 남자.mp4"];  
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '600');
+            player.setAttribute('height','300');
+            player.setAttribute('src', randomVideoUrl);
+            playerDiv.appendChild(player);
+        }; 
+      	document.write("== ahn test "+j+"  ==>  "+videos[j]+"<br>");
         }
      </script>
  </head>
@@ -26,28 +35,29 @@
  <body>
 	 <br><hr> 
 	 <h1>  기대하시라 안39의 모든 것을...</h1>
-
+	 <h1>   ahn1  ...</h1>
 	 <br><hr> 
 	 <p id="random_player">---ahn1 success ---</p>
 	 
- 	 <img src="800그림모음/장미.png"><br><br>
+ 	 <h1>   ahn2  ...</h1>
+	 <img src="800그림모음/장미.png"><br><br>
    	 <video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
- 	 <h1>  --ahn2  ...</h1>
+ 
    	 <br><hr> 
 
-       <script language="javascript" type="text/javascript">
+       	 <h1>   ahn3  test </h1>
+      <script language="javascript" type="text/javascript">
         for (var j=1; j<=10;j++ )
         {
       	    document.write("== ahn31-39 test "+j+"  ==>  "+videos[j]+"<br>");
- 	 <video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
         }
      </script>
 
-        for (var j=1; j<=10;j++ )
-        {
-      	 <h1>   "== ahn --ahn4  test "+j+"  ==>  "+videos[j]+"<br>"</h1>
- 	 <video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
-        }
 
+      	 <h1>   ahn4  test </h1>
+ 	 <video controls witdh="100px" height="300px" src=videos[7]></video><br><br>  
+
+      	 <h1>   ahn5  test </h1>
+ 	 <video controls witdh="100px" height="300px" src="900동영상모음/닭알알알.mp4"></video><br><br>  
 </body>
 </html>
