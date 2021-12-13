@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+  <title> New Document </title>
+ </head>
+  <body>
+     <script language="javascript" type="text/javascript">
+        for (var j=1; j<=1;j++ )
+        {
+		var videos = ["900동영상모음/닭알알알.mp4",
+			 "900동영상모음/손가락 맞추기.mp4",
+			 "900동영상모음/각종 신기한 기계들.mp4",
+			 "900동영상모음/강아지의 체온.mp4",
+			 "900동영상모음/동물과의 교감.mp4",
+			 "900동영상모음/만능 여행 가방.mp4",
+			 "900동영상모음/술 취한 동물들.mp4",
+			 "900동영상모음/엉덩이 커피 자판기.mp4",
+			 "900동영상모음/인생은 돌고 돌아요 순환.mp4",
+			 "900동영상모음/시골 노부부들의 자식 편지.mp4",
+			 "900동영상모음/술 끊고 있단다.mp4",
+			 "900동영상모음/웃고 윙크하는 강아지.mp4",                      
+			 "900동영상모음/트럼프를 한 대 때린 남자.mp4"];  
+		window.onload = function () {
+			    var playerDiv = document.getElementById("random_player");
+			    var player = document.createElement("IFRAME");
+			    var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+			    player.setAttribute('width', '600');
+			    player.setAttribute('height','300');
+			    player.setAttribute('src', randomVideoUrl);
+			    playerDiv.appendChild(player);
+        }; 
+ 		// 줄바꿈   
+		document.write("");
+
+		document.write("<p ");
+		document.write("id = 'random_player'>");
+		document.write("---ahn1 random_player  ---");
+		document.write("</p>");
+
+  		// <br /> 줄바꿈을 의미하는 HTML 태그
+		document.write("<br>");
+		document.write("<hr>");
+ 
+		setTimeout("location.reload()", 200000);
+		document.write("---location.reload()  200초 후 화면 지우기 성공   ---");
+		
+  		// <br /> 줄바꿈을 의미하는 HTML 태그
+		document.write("<br>");
+		document.write("<hr>");
+  }
+     </script>
+
+ </body>
+</html>
