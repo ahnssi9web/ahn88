@@ -31,14 +31,17 @@
             player.setAttribute('src', randomVideoUrl);
             playerDiv.appendChild(player);
         }; 
-      	document.write("== ahn0 videos[j] ---> "+j+"  ==>  "+videos[j]+"<br>");
+      	document.write("== ahn0 videos["+j+"]  ==>  "+videos[j]+"<br>");
  		document.write("<p ");
 		document.write("id = 'random_player'>");
+		document.write("---ahn0 success ---");
 		document.write("</p>");
        }
      </script>
-	 <p >---ahn0 success ---</p>
 
+	 <br><hr> 
+	 <p id='random_player'>---ahn000 success ---</p>
+	 <br><hr> 
 
 <h3> for 문으로 10px ~ 35px 크기 출력 </h3>
 <hr>
@@ -48,6 +51,11 @@
 		document.write("style = 'font-size : " + size + "px'>");
 		document.write(size + "px");
 		document.write("</span>");
+
+ 		document.write("<p ");
+		document.write("id = 'random_player'>");
+		document.write("---ahn0 success ---");
+		document.write("</p>");
 	}
 </script>
 
