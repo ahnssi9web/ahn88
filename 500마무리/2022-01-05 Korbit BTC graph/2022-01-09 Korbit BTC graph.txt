@@ -232,6 +232,7 @@ while 1:
         sellavg = sellprice / sellcnt
         buyselldiff = buyavg - sellavg
         marketcnt =  buycnt/sellcnt
+        ahndata100 = marketcnt*100
         #print(" ---marketcnt = ", marketcnt,"  sellcnt=", sellcnt, "  buycnt=", buycnt,  "  sellavg=", sellavg,"  buyavg=", buyavg," buyselldiff=",buyselldiff," sellaqg-buyavg=",sellavg - buyavg)
 
     if (marketcnt > 1.2):
@@ -250,6 +251,7 @@ while 1:
     #=============== 최근 자료의 buy sell 주문수량 비교 buy가 많으면 상승장 판단
     if (buyamt > 0):
         marketamt =  buyamt/sellamt
+        ahndata100 = ahndata100 + marketamt*100
     #--------------------------------------------------------------------------
     #print(" ---marketamt = ", marketamt, "  buycnt=", buycnt, " buyamt=", buyamt, "  sellcnt=", sellcnt, "   sellamt=", sellamt)
     if (marketamt > 1.2):
@@ -267,6 +269,7 @@ while 1:
     # -----------------------------------------------
     if buyavg > 0:
         marketprice = buyavg/sellavg
+        ahndata100 = ahndata100 + marketprice*100
         #print(" ---marketprice = ", marketprice*100, "  sellavg=", sellavg, "   buyavg=", buyavg)
     # ----------------------------------------------------
     if (marketprice > 1.01):
@@ -290,21 +293,22 @@ while 1:
     # ----------------------------------------------------
     # 그래픽용 --- 10,000개를 합산하니 크기가 커서  100으로 나누어 100단위로 만듬
     #------------------------------------------------------------------
-    BTCprice=(float(ahnkorbit[i][1])) / 100000
+    BTCprice = round((float(ahnkorbit[i][1]))/100000,1)
 
-    buycnt100=round(buycnt/100,1)
-    buyamt100=round(buyamt/1,1)
-    buyavg100 = round(buyavg/100000, 3)
+    buycnt100 = int(buycnt/100)
+    buyamt100 = int(buyamt/1)
+    buyavg100 = round(float((buyavg/100000)-100), 1)
 
-    sellcnt100 = round(sellcnt/100, 1)
-    sellamt100 = round(sellamt/1, 1)
-    sellavg100 = round(sellavg/100000, 3)
+    sellcnt100 = int(sellcnt/100)
+    sellamt100 = int(sellamt/1)
+    sellavg100 = round(float((sellavg/100000)-100),1)
 
-    ttlamt100=round(ttlamt/1,1)
+    ttlamt100 = int(ttlamt/1)
 
-    marketcnt100=round(marketcnt * 100, 0)
-    marketamt100=round(marketamt * 100, 0)
-    marketprice100=round(marketprice * 100, 0)
+    ahndata100 = int(ahndata100)
+    marketcnt100 = int(marketcnt*100)
+    marketamt100 = int(marketamt*100)
+    marketprice100 = int(marketprice*100)
 
    # ========================================================================================================
     #  기존 엑셀 파일 불러와서 100개만 graphfile.xlsx에 저장하고 그래프 만들기
@@ -325,10 +329,11 @@ while 1:
     BTCSheet.cell(lenBTCSheet+1, 11).value = marketamt100
     BTCSheet.cell(lenBTCSheet+1, 12).value = marketprice100
 
-    BTCSheet.cell(lenBTCSheet+1, 13).value = ahndata
-    BTCSheet.cell(lenBTCSheet+1, 14).value = result11
-    BTCSheet.cell(lenBTCSheet+1, 15).value = result12
-    BTCSheet.cell(lenBTCSheet+1, 16).value = result13
+    BTCSheet.cell(lenBTCSheet+1, 13).value = ahndata100
+    BTCSheet.cell(lenBTCSheet+1, 14).value = ahndata
+    BTCSheet.cell(lenBTCSheet+1, 15).value = result11
+    BTCSheet.cell(lenBTCSheet+1, 16).value = result12
+    BTCSheet.cell(lenBTCSheet+1, 17).value = result13
     BTCfile.save('C:/Users/ahnssi9/Desktop/BTCfile.xlsx')
     # ========================================================================================================
     sleep(1)
@@ -361,10 +366,11 @@ while 1:
     graphSheet.cell(1, 10).value = 'marketcnt100'
     graphSheet.cell(1, 11).value = 'marketamt100'
     graphSheet.cell(1, 12).value = 'marketprice100'
-    graphSheet.cell(1, 13).value = 'ahndata'
-    graphSheet.cell(1, 14).value = 'result11'
-    graphSheet.cell(1, 15).value = 'result12'
-    graphSheet.cell(1, 16).value = 'result13'
+    graphSheet.cell(1, 13).value = 'ahndata100'
+    graphSheet.cell(1, 14).value = 'ahndata'
+    graphSheet.cell(1, 15).value = 'result11'
+    graphSheet.cell(1, 16).value = 'result12'
+    graphSheet.cell(1, 17).value = 'result13'
 
 
     j=1
@@ -386,6 +392,7 @@ while 1:
         graphSheet.cell(j, 14).value = BTCSheet.cell(i, 14).value
         graphSheet.cell(j, 15).value = BTCSheet.cell(i, 15).value
         graphSheet.cell(j, 16).value = BTCSheet.cell(i, 16).value
+        graphSheet.cell(j, 17).value = BTCSheet.cell(i, 17).value
         #print(i,graphSheet.cell(i, 1).value,graphSheet.cell(i, 2).value)
     graphfile.save('C:/Users/ahnssi9/Desktop/graphfile.xlsx')
     graphfile.close()
@@ -401,9 +408,9 @@ while 1:
     #print(" graphSheet -->갯수 : ",len(graphSheet['A']))
     lengraphSheet = len(graphSheet['A'])
     # ----------------------------------------------------
-    print(ttlline,lenBTCSheet,lengraphSheet, nowDatetime, BTCprice, "<B/S>", buycnt100, buyamt100, buyavg100,"/", sellcnt100, sellamt100,
-          sellavg100, "<Tamt>", ttlamt100, " </100>", marketcnt100, marketamt100, marketprice100, " <",
-          ahndata, ">", result11, result12, result13)
+    print(ttlline,lenBTCSheet,lengraphSheet, nowDatetime, BTCprice, " ----<B/S>", buycnt100, buyamt100,"avg:", buyavg100,"/", sellcnt100, sellamt100,
+          "avg:",sellavg100, "<T>", ttlamt100, "  ---<%>", marketcnt100, marketamt100, marketprice100, " --<",
+          ahndata100,ahndata,">", result11, result12, result13)
     # ---------------------------------------------------
     # --------------------------------------------------------------------
     # print("------LineChart 챠트그리기 시작 ---------------------")
@@ -417,10 +424,10 @@ while 1:
 
     # --------------------------------------------------------------------
     # category ---> x축 날짜 표시 A2 :A13  (row=1-10, col=1  --->  y축수치간격은 자동으로 계산됨
-    category = Reference(graphSheet, min_col=1,       min_row=1, max_row=13)
+    category = Reference(graphSheet, min_col=1,       min_row=1, max_row=14)
     chart.set_categories(category)
     # chartData B1:K100  ---> 범례 B1:K1 + 실제 데아타 영역 B2:K100 (범례는 첫째줄이니 B2:K2 + 데이타는 B2:K100 앞의 두 가지를 합쳐서  B1:k100)
-    chartData = Reference(graphSheet, min_col=2, max_col=13,    min_row=(lengraphSheet)-200, max_row=(lengraphSheet))
+    chartData = Reference(graphSheet, min_col=2, max_col=14,    min_row=(lengraphSheet)-200, max_row=(lengraphSheet))
     chart.add_data(chartData, titles_from_data=True)  #title_from_data는 범례 값
     # --------------------------------------------------------------------
     # -------------------------------------------------------------------
@@ -454,14 +461,14 @@ while 1:
     # ------------------------------------------------------------------------------------
     sleep(1)
     # --------------------------------------------------------------------
-    if (ahndata>=120 or ahndata <=30):
+    if (ahndata>=120 or ahndata <=40):
         # ----------------------------------------------------
         # 메일 보내기
         # --------------------------------------------------------------------
 
         # 제목, 본문 작성
         msg = MIMEMultipart()
-        msg['Subject'] = " ** ahndata : "+str(ahndata)+result11+result12+result13
+        msg['Subject'] = " ** ahndata : "+str(ahndata100)+str(ahndata)+result11+result12+result13
         msg.attach(MIMEText('  내 삶의 행복한 순간  ', 'plain'))
 
         # 파일첨부 (파일 미첨부시 생략가능)
@@ -482,7 +489,7 @@ while 1:
         s.sendmail("   Center", emailid, msg.as_string())
         s.quit()
         # ----------------------------------------------------
-        print(" ---   메일보내기  ----> "," ahndata:",ahndata,result11,result12,result13," ",name,  emailid + ' \n')
+        print(" ---   메일보내기  ----> "," ahndata:",ahndata100,ahndata,result11,result12,result13," ",name,  emailid + ' \n')
         sleep(5)
     # ----------------------------------------------------
     #print(" --- 작업끝    600초 대기 ---->> ")
