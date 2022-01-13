@@ -495,7 +495,7 @@ while 1:
     # ------------------------------------------------------------------------------------
     sleep(1)
     # --------------------------------------------------------------------
-    if (ahndata>=110 or ahndata <=50):
+    if (ahndata100>=500 or ahndata>=110 or ahndata <=50):
         # ----------------------------------------------------
         # °æº¸
         # --------------------------------------------------------------------
@@ -506,7 +506,7 @@ while 1:
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
         print(beepsound())
-        print(" ------> "," ahndata>=110 or ahndata<=50  : ",ahndata,result11,result12,result13," ",name,  emailid + ' \n')
+        print(" ------> ahndata100>=500 : ",ahndata100," ahndata>=110 or ahndata<=50  : ",ahndata,result11,result12,result13)
         # --------------------------------------------------------------------
     if (ahndata >= 120 or ahndata <= 40):
         # ----------------------------------------------------
