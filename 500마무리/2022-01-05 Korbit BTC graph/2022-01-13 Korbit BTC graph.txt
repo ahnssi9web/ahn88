@@ -309,18 +309,18 @@ while 1:
     BTCprice200	= int(BTCpriceNow/BTCprice*100)
 
     # --------------------------------------------------------------------
-    if (BTCprice200>=110):
+    if (BTCprice200>=105):
         # ----------------------------------------------------
         # °æº¸
         # --------------------------------------------------------------------
         def beepsound():
-            freq = 2000  # range : 37 ~ 32767
-            dur = 1000  # ms
+            freq = 3000  # range : 37 ~ 32767
+            dur = 2000  # ms
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
         print(beepsound())
-        print(" =======> check ==============>>>>>>  BTCprice200 >= 110 :",BTCprice200)
+        print(nowDatetime," =======> check ==============>>>>>>  BTCprice200 >= 110 :",BTCpriceNow," / ",BTCprice," = ",BTCprice200)
         # --------------------------------------------------------------------
     buycnt100 = int(buycnt/100)
     buyamt100 = int(buyamt/1)
@@ -440,7 +440,7 @@ while 1:
     #print(" graphSheet -->°¹¼ö : ",len(graphSheet['A']))
     lengraphSheet = len(graphSheet['A'])
     # ----------------------------------------------------
-    print(ttlline,lenBTCSheet,lengraphSheet, nowDatetime,BTCpriceNow,BTCprice,BTCprice200,"--<B/S>", buycnt100, buyamt100,"avg:", buyavg100,"/", sellcnt100, sellamt100,
+    print(ttlline,lenBTCSheet,lengraphSheet, nowDatetime,BTCpriceNow,BTCprice,"<",BTCprice200,">--<B/S>", buycnt100, buyamt100,"avg:", buyavg100,"/", sellcnt100, sellamt100,
           "avg:",sellavg100, "<T>", ttlamt100, "--<%>", marketcnt100, marketamt100, marketprice100, "-<",
           ahndata100,ahndata,">", result11, result12, result13)
     # ---------------------------------------------------
