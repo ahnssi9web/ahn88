@@ -555,7 +555,7 @@
  
            ahnindex = ahnindex + 1;
            function getImageTag() { var img = '<img src=\"'; 
-           var randomIndex = Math.floor(Math.random() * imageURLs.length); 
+           var randomIndex = Math.floor(ahnindex * imageURLs.length); 
                                 img += imageURLs[ahnindex]; 
                                 img += '\" alt=\" --->> Something wrong -----> check.... \"/>'; 
                                 return img; } 
