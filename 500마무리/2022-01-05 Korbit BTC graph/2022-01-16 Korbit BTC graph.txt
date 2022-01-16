@@ -324,7 +324,7 @@ while 1:
     BTCprice200	= int(BTCpriceNow/BTCprice*100)
     #print("--- BTCpriceNow : ", BTCpriceNow, " ---- BTCprice = ", BTCprice, " ---- BTCprice200 : ", BTCprice200)
     # --------------------------------------------------------------------
-    if ((BTCprice200>=105 or BTCprice200<=95) and (now.hour>=6 and now.hour<=20)):
+    if (BTCprice200>=105 or BTCprice200<=95):
         # ----------------------------------------------------
         # 경보
         # --------------------------------------------------------------------
@@ -334,11 +334,13 @@ while 1:
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
-        print(beepsound())
-        print(nowDatetime," =======> check price  ==============>>>>>>  BTCprice200 >= 110 :",BTCpriceNow," / ",BTCprice," = ",BTCprice200)
+
+        if (now.hour >= 6 and now.hour <= 20):
+            print(beepsound())
+        print(nowDatetime," =======> check   BTCprice :",BTCpriceNow," / ",BTCprice," = ",BTCprice200)
         # ----------------------------------------------------
         with open("C:/Users/ahnssi9/Desktop/BTCtxt.txt", mode="a", encoding="cp949") as f:
-            p = nowDatetime +" =======> check price  ==============>>>>>>  BTCprice200 >= 110 :"+str(BTCpriceNow)+" / "+str(BTCprice)+" = "+str(BTCprice200) + " \n"
+            p = nowDatetime +" =======> check  BTCprice :"+str(BTCpriceNow)+" / "+str(BTCprice)+" = "+str(BTCprice200) + " \n"
             f.write(p)
             # -----------------------------------------------
 
@@ -520,7 +522,7 @@ while 1:
     sleep(1)
 
     # --------------------------------------------------------------------
-    if ((ahndata100>=500 or ahndata>=110 or ahndata <=50) and (now.hour>=6 and now.hour<=20)):
+    if (ahndata100>=500 or ahndata>=110 or ahndata <=50):
         # ----------------------------------------------------
         # 경보
         # --------------------------------------------------------------------
@@ -530,15 +532,16 @@ while 1:
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
             ws.Beep(freq, dur)  # winsound.Beep(frequency, duration)
-        print(beepsound())
-        print(nowDatetime," ------> ahndata100>=500 : ",ahndata100," ahndata>=110 or ahndata<=50  : ",ahndata,result11,result12,result13)
+        if (now.hour >= 6 and now.hour <= 20):
+            print(beepsound())
+        print(nowDatetime," ------> ahndata100  : ",ahndata100," ahndata : ",ahndata,result11,result12,result13)
         # ----------------------------------------------------
         with open("C:/Users/ahnssi9/Desktop/BTCtxt.txt", mode="a", encoding="cp949") as f:
-            p= nowDatetime+" "+" ------> ahndata100>=500 : "+" "+ str(ahndata100)+" "+ " ahndata>=110 or ahndata<=50  : "+" "+ str(ahndata)+" "+result11+" "+ result12+" "+ result13+" \n"
+            p= nowDatetime+" ------> check   ahndata100 : "+ str(ahndata100)+" ahndata :"+ str(ahndata)+" "+result11+" "+ result12+" "+ result13+" \n"
             f.write(p)
             # -----------------------------------------------
             # --------------------------------------------------------------------
-    if ((ahndata >= 120 or ahndata <= 40) and (now.hour>=6 and now.hour<=20)):
+    if (ahndata >= 120 or ahndata <= 40):
         # ----------------------------------------------------
         # ----------------------------------------------------
         # 메일 보내기
